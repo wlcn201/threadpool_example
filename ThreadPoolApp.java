@@ -1,9 +1,8 @@
-
 /**
- * Write a description of class ThreadPoolApp here.
+ * Track the jobs that are undertaken by the threads.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author wlcn201 
+ * @version 15.10.2014
  */
 
 import java.util.concurrent.Executors;
@@ -13,7 +12,7 @@ public class ThreadPoolApp
 {
     public static void main(String[] args) {
         if (args.length < 2)
-            ThreadPoolApp.error();
+            ThreadPoolApp.error(); 
         try{
             int numberOfJobs = Integer.parseInt(args[0]);
             int numberOfThreads = Integer.parseInt(args[1]);
